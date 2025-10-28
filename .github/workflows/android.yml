@@ -12,22 +12,42 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
-    - name: set up JDK 17
+    - name: Checkout
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+        lfs: true
+
+    - name: Set up JDK 17
       uses: actions/setup-java@v3
       with:
-        java-version: '17'
-        distribution: 'temurin'
-        cache: gradle
+        distribution: temurin
+        java-version: 17
 
-    - name: Make gradlew executable
-      run: chmod +x ./gradlew
-
-    - name: Verify Gradle wrapper files
+    - name: Make gradlew executable and verify wrapper files
       run: |
-        test -f gradlew || (echo "gradlew script missing" && exit 1)
-        test -f gradle/wrapper/gradle-wrapper.jar || (echo "gradle-wrapper.jar missing" && exit 1)
-        echo "Wrapper present"
+        set -e
+        echo "CWD: $(pwd)"
+        echo "Listing repo root:"
+        ls -la
+        echo "Listing gradle wrapper:"
+        ls -la gradle || true
+        ls -la gradle/wrapper || true
+        
+        # ensure wrapper script and jar exist
+        test -f gradlew || (echo "ERROR: gradlew script missing" && exit 1)
+        test -f gradle/wrapper/gradle-wrapper.jar || (echo "ERROR: gradle-wrapper.jar missing" && exit 1)
+        
+        # make executable
+        chmod +x ./gradlew
+        echo "gradlew head:"
+        head -n 20 gradlew || true
+        echo "gradle-wrapper.jar size (bytes):"
+        stat -c%s gradle/wrapper/gradle-wrapper.jar || true
+        file gradle/wrapper/gradle-wrapper.jar || true
+
+    - name: Print Gradle wrapper version
+      run: ./gradlew --version
 
     - name: Build with Gradle
       run: ./gradlew build --no-daemon --stacktrace
