@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">تطبيق السجل</string>
+
+    <!-- Main Activity -->
+    <string name="hint_name">الاسم</string>
+    <string name="hint_number">الرقم</string>
+    <string name="hint_date">التاريخ</string>
+    <string name="hint_action">الإجراء</string>
+    <string name="btn_add_image">إضافة صورة</string>
+    <string name="btn_save">حفظ السجل</string>
+    <string name="btn_new">سجل جديد</string>
+    <string name="btn_search">بحث</string>
+    <string name="btn_language">English</string>
+
+    <!-- Image Descriptions -->
+    <string name="desc_main_image">الصورة الرئيسية الملتقطة</string>
+    <string name="desc_thumbnail">صورة مصغرة</string>
+
+    <!-- Search Activity -->
+    <string name="search_hint">ابحث بالاسم أو الرقم</string>
+    <string name="sort_by_date">التاريخ</string>
+    <string name="sort_by_name">الاسم</string>
+    <string name="sort_ascending">الأقدم أولاً</string>
+    <string name="sort_descending">الأحدث أولاً</string>
+
+    <!-- Detail Activity -->
+    <string name="btn_edit">تعديل</string>
+    <string name="btn_delete">حذف</string>
+
+    <!-- Messages -->
+    <string name="msg_fill_all_fields">يرجى ملء جميع الحقول</string>
+    <string name="msg_record_saved">تم حفظ السجل بنجاح</string>
+    <string name="msg_record_updated">تم تحديث السجل بنجاح</string>
+    <string name="msg_record_deleted">تم حذف السجل بنجاح</string>
+    <string name="msg_error_saving">خطأ في حفظ السجل</string>
+    <string name="msg_error_loading">خطأ في تحميل السجل</string>
+    <string name="msg_error_deleting">خطأ في حذف السجل</string>
+    <string name="msg_camera_permission_required">إذن الكاميرا مطلوب</string>
+    <string name="msg_max_images_allowed">الحد الأقصى للصور المسموح به</string>
+    <string name="msg_error_saving_image">خطأ في حفظ الصورة</string>
+    <string name="msg_no_records_found">لم يتم العثور على سجلات</string>
+    <string name="msg_name_required">الاسم مطلوب</string>
+    <string name="msg_number_required">الرقم مطلوب</string>
+
+    <!-- Add Record Activity -->
+    <string name="title_add_record">إضافة سجل جديد</string>
+
+    <!-- Main Activity (Updated) -->
+    <string name="btn_add_new_record">إضافة سجل جديد</string>
+    <string name="desc_empty_state">لم يتم العثور على سجلات</string>
+
+    <!-- Content Descriptions for Accessibility -->
+    <string name="cd_previous_image">الصورة السابقة</string>
+    <string name="cd_next_image">الصورة التالية</string>
+    <string name="cd_select_image">اختر صورة</string>
+</resources>

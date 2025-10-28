@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Record App</string>
+
+    <!-- Main Activity -->
+    <string name="hint_name">Name</string>
+    <string name="hint_number">Number</string>
+    <string name="hint_date">Date</string>
+    <string name="hint_action">Action</string>
+    <string name="btn_add_image">Add Image</string>
+    <string name="btn_save">Save Record</string>
+    <string name="btn_new">New Record</string>
+    <string name="btn_search">Search</string>
+    <string name="btn_language">العربية</string>
+
+    <!-- Image Descriptions -->
+    <string name="desc_main_image">Main captured image</string>
+    <string name="desc_thumbnail">Image thumbnail</string>
+
+    <!-- Search Activity -->
+    <string name="search_hint">Search by name or number</string>
+    <string name="sort_by_date">Date</string>
+    <string name="sort_by_name">Name</string>
+    <string name="sort_ascending">Oldest First</string>
+    <string name="sort_descending">Newest First</string>
+
+    <!-- Detail Activity -->
+    <string name="btn_edit">Edit</string>
+    <string name="btn_delete">Delete</string>
+
+    <!-- Messages -->
+    <string name="msg_fill_all_fields">Please fill in all fields</string>
+    <string name="msg_record_saved">Record saved successfully</string>
+    <string name="msg_record_updated">Record updated successfully</string>
+    <string name="msg_record_deleted">Record deleted successfully</string>
+    <string name="msg_error_saving">Error saving record</string>
+    <string name="msg_error_loading">Error loading record</string>
+    <string name="msg_error_deleting">Error deleting record</string>
+    <string name="msg_camera_permission_required">Camera permission is required</string>
+    <string name="msg_max_images_allowed">Maximum images allowed</string>
+    <string name="msg_error_saving_image">Error saving image</string>
+    <string name="msg_no_records_found">No records found</string>
+    <string name="msg_name_required">Name is required</string>
+    <string name="msg_number_required">Number is required</string>
+
+    <!-- Add Record Activity -->
+    <string name="title_add_record">Add New Record</string>
+
+    <!-- Main Activity (Updated) -->
+    <string name="btn_add_new_record">Add New Record</string>
+    <string name="desc_empty_state">No records found</string>
+
+    <!-- Content Descriptions for Accessibility -->
+    <string name="cd_previous_image">Previous image</string>
+    <string name="cd_next_image">Next image</string>
+    <string name="cd_select_image">Select image</string>
+</resources>
