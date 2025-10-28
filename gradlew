@@ -1,5 +1,6 @@
 #!/usr/bin/env sh
 DEFAULT_JVM_OPTS="-Xmx1g -Dfile.encoding=UTF-8"
+APP_HOME=$(dirname "$0")
 case "`uname`" in
     CYGWIN*|MINGW*|MSYS*)
         if [ -n "$JAVA_HOME" ] ; then
@@ -26,6 +27,6 @@ case "`uname`" in
             echo "  We cannot execute $JAVACMD"
             exit 1
         fi
-        exec "$JAVACMD" $DEFAULT_JVM_OPTS -jar "`dirname "$0"`/gradle/wrapper/gradle-wrapper.jar" "$@"
+        exec "$JAVACMD" $DEFAULT_JVM_OPTS -jar "$APP_HOME/gradle/wrapper/gradle-wrapper.jar" "$@"
         ;;
 esac
