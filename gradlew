@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
-DEFAULT_JVM_OPTS='"-Xmx1g" "-Dfile.encoding=UTF-8"'
+DEFAULT_JVM_OPTS="-Xmx1g -Dfile.encoding=UTF-8"
 case "`uname`" in
     CYGWIN*|MINGW*|MSYS*)
         if [ -n "$JAVA_HOME" ] ; then
